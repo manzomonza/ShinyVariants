@@ -22,7 +22,7 @@ addLinks_clinvar = function(snv, clinvar_hits){
     if(!is.na(snv_clinvar$ClinVar_VariationID[i])){
       snv_clinvar$link_clinvar[i] = paste0("https://www.ncbi.nlm.nih.gov/clinvar/variation/",
                                            snv_clinvar$ClinVar_VariationID[i])
-      snv_clinvar$link_clinvar[i] <- paste0("<a href='", snv_clinvar$link_clinvar[i], "' target='_blank'>", snv_clinvar$protein[i], "</a>")
+      snv_clinvar$link_clinvar[i] <- paste0("<a href='", snv_clinvar$link_clinvar[i], "' target='_blank'>", snv_clinvar$ClinVar_Significance[i], "</a>")
     }
   }
   return(snv_clinvar)
