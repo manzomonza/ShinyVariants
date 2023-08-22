@@ -3,10 +3,9 @@ library(ggplot2)
 
 # Sample data frame with sample information and associated files
 samples <- data.frame(
-  Sample = c('Y123', 'Y124', 'X432', 'Y234'),
-  File = c('Y123_foi.tsv', 'Y124_foi.tsv', 'X432_foi.tsv', 'Y234_foi.tsv')
+  Sample = basename(dirname(dirname(list.files(path = './testfiles/', pattern = "parsed_snv.tsv", recursive = TRUE, full.names = TRUE)))),
+  File = list.files(path = './testfiles/', pattern = "parsed_snv.tsv", recursive = TRUE, full.names = TRUE)
 )
-
 # UI
 ui <- fluidPage(
   titlePanel("Sample Analysis"),
