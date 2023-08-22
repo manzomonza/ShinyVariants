@@ -1,0 +1,7 @@
+file	filepath	vcf_file	analysis_name
+parsed_info	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y538_B2023.7419_OcaV3_output/parsed_output/parsed_vcf_info.yaml	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3
+parsed_snv	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y538_B2023.7419_OcaV3_output/parsed_output/parsed_snv.tsv	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3
+parsed_cnv	NA	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3
+parsed_fusions	NA	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3
+parsed_complete	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y538_B2023.7419_OcaV3_output/parsed_output/parsed_complete.tsv	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3
+parsed_fp	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y538_B2023.7419_OcaV3_output/parsed_output/parsed_filepaths.tsv	Y538_B2023.7419_v1_Filtered_2023-02-24_05_03_42.vcf	Y538_B2023.7419_OcaV3

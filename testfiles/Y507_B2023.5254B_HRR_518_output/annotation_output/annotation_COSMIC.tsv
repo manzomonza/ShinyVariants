@@ -1,0 +1,6 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+1	CDKN2A	p.A68V	A	68	V	NA	NA
+2	FGFR2	p.R592H	R	592	H	NA	NA
+3	KRAS	p.G12D	G	12	D	2175	757
+4	TP53	p.L265del	L	265	d	19	NA
+5	SMAD4	p.I74Yfs*20	I	74	Y	NA	NA

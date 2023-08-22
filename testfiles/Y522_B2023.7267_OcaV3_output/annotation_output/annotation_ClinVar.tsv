@@ -1,0 +1,3 @@
+rowid	gene	coding	protein	ClinVar_Significance	ClinVar_VariationID
+10	SLX4	c.2006G>A	p.Arg669His	Uncertain significance	319169
+12	NF1	c.3427_3436delCACTGTACGG	p.His1143fs	NA	NA

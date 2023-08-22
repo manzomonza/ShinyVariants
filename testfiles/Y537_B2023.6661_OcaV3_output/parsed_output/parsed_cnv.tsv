@@ -1,0 +1,2 @@
+seqnames	gene	ref	alt	RAW_CN	perc_0.05	perc_0.95	vcf_file	analysis_name
+chr12	POLE	C	<CNV>	4.41	4.75224	5.28565	Y537_B2023.6661_v1_Filtered_2023-02-24_04_55_08.vcf	Y537_B2023.6661_OcaV3

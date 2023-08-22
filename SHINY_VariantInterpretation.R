@@ -1,37 +1,60 @@
 library(shiny)
 library(DT)
 
-
-cnv = "/Users/manzo/USB/USB_Diagnostics/VariantAggregation/outputs/Y518_B2023.6176_OcaV3_output/parsed_output/parsed_cnv.tsv"
-cnv = readr::read_tsv(cnv)
-
-snv = "/Users/manzo/USB/USB_Diagnostics/VariantAnnotationModules/testing/parsed_output/Y12_B2022.54547_OCAPlus_w512_parsed_output/snv.txt"
+snv = "./testfiles/Y537_B2023.6661_OcaV3_output/parsed_output/parsed_snv.tsv"
+clinvar_hits = "./testfiles/Y537_B2023.6661_OcaV3_output/annotation_output/annotation_ClinVar.tsv"
+clinvar_hits = readr::read_tsv(clinvar_hits)
 snv = readr::read_tsv(snv)
 
 snv = VariantAnnotationModules::amino_acid_code_3_to_1(snv)
-snv$oncokb = paste0("https://www.oncokb.org/gene/", snv$gene,"/", gsub("p\\.",'', snv$protein))
-snv$link <- paste0("<a href='", snv$oncokb, "' target='_blank'>", snv$protein, "</a>")
+
+addLinks_oncokb = function(snv){
+  snv$oncokb = paste0("https://www.oncokb.org/gene/", snv$gene,"/", gsub("p\\.",'', snv$protein))
+  snv$link_oncokb <- paste0("<a href='", snv$oncokb, "' target='_blank'>", snv$protein, "</a>")
+  return(snv)
+}
+
+
+addLinks_clinvar = function(snv, clinvar_hits){
+  snv_clinvar = dplyr::left_join(snv, dplyr::select(clinvar_hits, -protein), by = c("gene",'rowid', 'coding'))
+  snv_clinvar$link_clinvar = NA
+  for (i in 1:nrow(snv_clinvar)){
+    if(!is.na(snv_clinvar$ClinVar_VariationID[i])){
+      snv_clinvar$link_clinvar[i] = paste0("https://www.ncbi.nlm.nih.gov/clinvar/variation/",
+                                           snv_clinvar$ClinVar_VariationID[i])
+      snv_clinvar$link_clinvar[i] <- paste0("<a href='", snv_clinvar$link_clinvar[i], "' target='_blank'>", snv_clinvar$protein[i], "</a>")
+    }
+  }
+  return(snv_clinvar)
+}
+
+snvl = addLinks_oncokb(snv)
+snv_clinvar = dplyr::left_join(snvl, dplyr::select(clinvar_hits, -protein), by = c("gene",'rowid', 'coding'))
+snv_clinvar$ClinVar_VariationID
+snvl = addLinks_clinvar(snvl, clinvar_hits = clinvar_hits)
+dplyr::select(snvl, contains("link"))
+
 classifications = c("benign", "likely benign", "unknown", "likely pathogenic", "pathogenic", "predictive")
 classval = c("benign", "likely benign", "unknown", "likely pathogenic", "pathogenic", "predictive")
 # Create a generic dataframe
 generic_df <- data.frame(
-  dplyr::select(snv,rowid,gene, coding,protein, link),
+  dplyr::select(snvl,rowid,gene, coding,protein, link_oncokb,link_clinvar),
   stringsAsFactors = FALSE
 )
 
 
-uids = paste(snv$gene, snv$coding, sep = '_')
-
+uids = paste(snvl$gene, snvl$rowid, sep = '_')
+x = unique(snv$sampleNames)
 shinyApp(
   ui = fluidPage(
-    title = paste('Variant Report for case',x),
+    title = paste('Variant Report for case:',x),
     DT::dataTableOutput('foo'),
     tableOutput('sel'),
     downloadButton('download', 'Download row classifications')
   ),
   server = function(input, output, session) {
     m = matrix(
-      character(0), nrow = nrow(snv), ncol = 6,
+      character(0), nrow = nrow(snvl), ncol = 6,
       dimnames = list(uids, classifications)
     )
 
@@ -61,8 +84,8 @@ shinyApp(
     selected_data = reactive({
       varvals = rep(NA, length(uids))
       varvals = sapply(uids, function(i) input[[i]])
-      tib = dplyr::select(generic_df, -link)
-      tib$values = varvals
+      tib = dplyr::select(generic_df, -contains("link"))
+      tib$Clinical_Interpretation = varvals
       tib
     })
 
@@ -76,7 +99,7 @@ shinyApp(
       },
       content = function(file) {
         selected_data = selected_data()
-        selected_data$ID = "TEST"
+        selected_data$ID = x
         write.csv(selected_data, file, row.names = FALSE)
       }
     )

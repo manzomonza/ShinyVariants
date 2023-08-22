@@ -1,0 +1,22 @@
+|
+  vcf_path: Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf
+  IonReporter:
+    AnalysisName: Y515_B2023.7268_HRR_514
+    fileDate: '20230224'
+    fileUTCtime: 2023-02-24T06:16:59
+    Software_version: 5.18.2.1
+    Export_version: 0.1.5
+    reference: hg19
+    Workflow_version: ir514
+    WorkflowName: Custom_BRCANess_Panel_v1
+  SampleInfo:
+    disease: .na
+    tumor_cellularity_manual: '70'
+    tumor_cellularity_calculated: None
+  SequencingQC:
+    percent_aligned_reads: '97.03'
+    percent_non_zero_amplicons: '100.00'
+    total_read_count: '7895939'
+    median_reads_per_amplicon: '2884.0'
+    MAPD: '0.436'
+    deamination_metric: '0.169101'

@@ -1,0 +1,6 @@
+rowid	gene	coding	protein	ClinVar_Significance	ClinVar_VariationID
+1	CDKN2A	c.203C>T	p.Ala68Val	Conflicting interpretations of pathogenicity	406701
+2	FGFR2	c.1775G>A	p.Arg592His	NA	NA
+3	KRAS	c.35G>A	p.Gly12Asp	Pathogenic	12582
+4	TP53	c.792_794delACT	p.Leu265del	NA	NA
+5	SMAD4	c.219delC	p.Ile74fs	NA	NA

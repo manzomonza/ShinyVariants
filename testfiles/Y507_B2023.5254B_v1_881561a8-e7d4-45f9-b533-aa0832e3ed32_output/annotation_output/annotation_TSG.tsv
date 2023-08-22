@@ -1,0 +1,6 @@
+rowid	gene	coding	protein	aa_position	tsgInfo
+1	CDKN2A	c.203C>T	p.A68V	NA	NA
+2	FGFR2	c.1775G>A	p.R592H	NA	NA
+3	KRAS	c.35G>A	p.G12D	NA	NA
+4	TP53	c.792_794delACT	p.L265del	NA	NA
+5	SMAD4	c.219delC	p.I74Yfs*20	74	likely pathogenic

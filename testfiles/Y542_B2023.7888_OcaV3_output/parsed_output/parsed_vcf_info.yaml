@@ -1,0 +1,22 @@
+|
+  vcf_path: Y542_B2023.7888_v1_Filtered_2023-02-24_05_11_04.vcf
+  IonReporter:
+    AnalysisName: Y542_B2023.7888_OcaV3
+    fileDate: '20230223'
+    fileUTCtime: 2023-02-23T16:57:38
+    Software_version: 5.18.2.1
+    Export_version: 0.1.5
+    reference: hg19
+    Workflow_version: ir514
+    WorkflowName: Oncomine Comprehensive v3 - w4.0 - DNA - Single Sample
+  SampleInfo:
+    disease: .na
+    tumor_cellularity_manual: '50'
+    tumor_cellularity_calculated: None
+  SequencingQC:
+    percent_aligned_reads: '97.79'
+    percent_non_zero_amplicons: '99.97'
+    total_read_count: '10368126'
+    median_reads_per_amplicon: '2361.0'
+    MAPD: '0.313'
+    deamination_metric: '0.0914089'

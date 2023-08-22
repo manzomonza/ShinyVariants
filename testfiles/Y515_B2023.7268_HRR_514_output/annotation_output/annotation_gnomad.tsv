@@ -1,0 +1,3 @@
+rowid	gene	ref	alt	coding	protein	gnomad_MAF
+1	APC	AG	A	c.5035delG	p.Ala1679HisfsTer30	NA
+3	SPOP	G	T	c.399C>A	p.Phe133Leu	NA

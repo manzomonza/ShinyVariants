@@ -1,0 +1,6 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+1	CDKN2A	p.H66Sfs*42	H	66	S	NA	NA
+2	ATM	NA	NA	NA	NA	NA	NA
+3	KRAS	p.G12V	G	12	V	2175	657
+5	BRCA2	p.A2951V	A	2951	V	NA	NA
+6	TSC2	p.G440S	G	440	S	NA	NA

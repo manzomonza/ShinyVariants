@@ -1,0 +1,6 @@
+rowid	gene	coding	protein	aa_position	tsgInfo
+1	CDKN2A	c.195_229delCCACGGCGCGGAGCCCAACTGCGCCGACCCCGCCA	p.H66Sfs*42	66	likely pathogenic
+2	ATM	c.8671+1G>A	NA	NA	NA
+3	KRAS	c.35G>T	p.G12V	NA	NA
+5	BRCA2	c.8852C>T	p.A2951V	NA	NA
+6	TSC2	c.1318G>A	p.G440S	NA	NA

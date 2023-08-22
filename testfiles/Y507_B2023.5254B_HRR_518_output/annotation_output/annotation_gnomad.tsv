@@ -1,0 +1,6 @@
+rowid	gene	ref	alt	coding	protein	gnomad_MAF
+1	CDKN2A	G	A	c.203C>T	p.Ala68Val	NA
+2	FGFR2	C	T	c.1775G>A	p.Arg592His	3.97855e-6
+3	KRAS	C	T	c.35G>A	p.Gly12Asp	4.01078e-6
+4	TP53	CAGT	C	c.792_794delACT	p.Leu265del	0
+5	SMAD4	AC	A	c.219delC	p.Ile74TyrfsTer20	NA

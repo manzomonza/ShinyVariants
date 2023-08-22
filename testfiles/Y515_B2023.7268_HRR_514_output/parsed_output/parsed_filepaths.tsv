@@ -1,0 +1,7 @@
+file	filepath	vcf_file	analysis_name
+parsed_info	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y515_B2023.7268_HRR_514_output/parsed_output/parsed_vcf_info.yaml	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514
+parsed_snv	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y515_B2023.7268_HRR_514_output/parsed_output/parsed_snv.tsv	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514
+parsed_cnv	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y515_B2023.7268_HRR_514_output/parsed_output/parsed_cnv.tsv	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514
+parsed_fusions	NA	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514
+parsed_complete	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y515_B2023.7268_HRR_514_output/parsed_output/parsed_complete.tsv	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514
+parsed_fp	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y515_B2023.7268_HRR_514_output/parsed_output/parsed_filepaths.tsv	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514

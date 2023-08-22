@@ -1,0 +1,7 @@
+file	filepath	vcf_file	analysis_name
+parsed_info	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y506_B2023.4403_Melanoma_output/parsed_output/parsed_vcf_info.yaml	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma
+parsed_snv	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y506_B2023.4403_Melanoma_output/parsed_output/parsed_snv.tsv	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma
+parsed_cnv	NA	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma
+parsed_fusions	NA	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma
+parsed_complete	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y506_B2023.4403_Melanoma_output/parsed_output/parsed_complete.tsv	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma
+parsed_fp	/mnt/NGS_Diagnostik/Dev_from_VCF/mixed/Y506_B2023.4403_Melanoma_output/parsed_output/parsed_filepaths.tsv	Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf	Y506_B2023.4403_Melanoma

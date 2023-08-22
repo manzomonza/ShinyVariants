@@ -1,0 +1,7 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+1	ARID1A	p.A247dup	A	247	d	NA	NA
+2	MSH6	p.S144I	S	144	I	NA	NA
+3	PDGFRB	p.V1007I	V	1007	I	NA	NA
+4	KRAS	p.G12S	G	12	S	2175	68
+5	BRCA1	p.Y105C	Y	105	C	NA	NA
+6	SMAD4	p.R361H	R	361	H	124	60

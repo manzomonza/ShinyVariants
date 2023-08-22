@@ -1,0 +1,7 @@
+rowid	gene	coding	protein	ClinVar_Significance	ClinVar_VariationID
+1	ARID1A	c.737_738insGGC	p.Ala247dup	Conflicting interpretations of pathogenicity	210263
+2	MSH6	c.431G>T	p.Ser144Ile	Benign	41596
+3	PDGFRB	c.3019G>A	p.Val1007Ile	NA	NA
+4	KRAS	c.34G>A	p.Gly12Ser	Pathogenic	12584
+5	BRCA1	c.314A>G	p.Tyr105Cys	Benign	54780
+6	SMAD4	c.1082G>A	p.Arg361His	Pathogenic	24832

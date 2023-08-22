@@ -1,0 +1,3 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+10	SLX4	p.R669H	R	669	H	NA	NA
+12	NF1	p.H1143Sfs*12	H	1143	S	NA	NA

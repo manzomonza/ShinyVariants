@@ -1,0 +1,4 @@
+rowid	gene	coding	protein	ClinVar_Significance	ClinVar_VariationID
+1	ESR1	c.1613A>G	p.Asp538Gly	NA	NA
+4	NOTCH1	c.3245G>T	p.Arg1082Leu	Uncertain significance	409079
+5	BRCA2	c.5386G>T	p.Asp1796Tyr	Conflicting interpretations of pathogenicity	419201

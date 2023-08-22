@@ -1,0 +1,3 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+1	PTEN	p.R130Q	R	130	Q	168	72
+2	BRCA2	p.K3326*	K	3326	*	NA	NA

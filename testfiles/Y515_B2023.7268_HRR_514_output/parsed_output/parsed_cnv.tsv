@@ -1,0 +1,2 @@
+seqnames	gene	ref	alt	RAW_CN	perc_0.05	perc_0.95	vcf_file	analysis_name
+chr8	MYC	C	<CNV>	6.38	6.4146	10.5666	Y515_B2023.7268_v1_Filtered_2023-02-24_07_16_50.vcf	Y515_B2023.7268_HRR_514

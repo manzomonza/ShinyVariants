@@ -1,0 +1,4 @@
+rowid	gene	protein	ref_AA	aa_position	mut_AA	mutation_position_count	mutation_count
+1	ESR1	p.D538G	D	538	G	46	46
+4	NOTCH1	p.R1082L	R	1082	L	NA	NA
+5	BRCA2	p.D1796Y	D	1796	Y	NA	NA

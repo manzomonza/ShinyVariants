@@ -1,0 +1,22 @@
+|
+  vcf_path: Y506_B2023.4403_v1_Filtered_2023-02-21_09_49_42.vcf
+  IonReporter:
+    AnalysisName: Y506_B2023.4403_Melanoma
+    fileDate: '20230219'
+    fileUTCtime: 2023-02-19T03:47:16
+    Software_version: 5.18.2.1
+    Export_version: 0.1.5
+    reference: hg19
+    Workflow_version: ir516
+    WorkflowName: Oncomine Custom Melanoma - 540 - w4.1 - DNA - Single Sample_516
+  SampleInfo:
+    disease: .na
+    tumor_cellularity_manual: .na
+    tumor_cellularity_calculated: .na
+  SequencingQC:
+    percent_aligned_reads: .na
+    percent_non_zero_amplicons: .na
+    total_read_count: .na
+    median_reads_per_amplicon: .na
+    MAPD: .na
+    deamination_metric: '0.0773911'

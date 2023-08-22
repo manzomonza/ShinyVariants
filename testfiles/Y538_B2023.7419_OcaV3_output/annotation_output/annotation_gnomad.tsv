@@ -1,0 +1,7 @@
+rowid	gene	ref	alt	coding	protein	gnomad_MAF
+1	ARID1A	G	GCGG	c.737_738insGGC	p.Ala247dup	NA
+2	MSH6	G	T	c.431G>T	p.Ser144Ile	9.42436e-4
+3	PDGFRB	C	T	c.3019G>A	p.Val1007Ile	4.77392e-5
+4	KRAS	C	T	c.34G>A	p.Gly12Ser	0
+5	BRCA1	T	C	c.314A>G	p.Tyr105Cys	8.76564e-5
+6	SMAD4	G	A	c.1082G>A	p.Arg361His	NA

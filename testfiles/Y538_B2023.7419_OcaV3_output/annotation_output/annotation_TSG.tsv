@@ -1,0 +1,7 @@
+rowid	gene	coding	protein	aa_position	tsgInfo
+1	ARID1A	c.737_738insGGC	p.A247dup	NA	NA
+2	MSH6	c.431G>T	p.S144I	NA	NA
+3	PDGFRB	c.3019G>A	p.V1007I	NA	NA
+4	KRAS	c.34G>A	p.G12S	NA	NA
+5	BRCA1	c.314A>G	p.Y105C	NA	NA
+6	SMAD4	c.1082G>A	p.R361H	NA	NA

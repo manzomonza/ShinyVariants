@@ -1,0 +1,3 @@
+rowid	gene	ref	alt	coding	protein	gnomad_MAF
+1	PTEN	G	A	c.389G>A	p.Arg130Gln	NA
+2	BRCA2	A	T	c.9976A>T	p.Lys3326Ter	0.00659626
