@@ -3,30 +3,34 @@ library(shiny)
 library(shinydashboard)
 library(DT)
 
+snvs = list.files(path = "sample_database", pattern = "parsed_snv.tsv", recursive = TRUE, full.names = TRUE)
 
-df = data.frame(ID = letters[1:3],
-                vals = 1:3)
-
-srf = readr::read_tsv('sample_radio.tsv')
+df = data.frame(ID = c("Y1234", "Y321"),
+                paths = snvs)
 classifications = c("report", "do not report")
 classval = c("report",'do_not_report')
 
-m = matrix(
-  character(0), nrow = nrow(srf), ncol = 2,
-  dimnames = list(srf$gene, classifications)
-)
+add_report_radio = function(input_table){
+  m = matrix(
+    character(0), nrow = nrow(input_table), ncol = 2,
+    dimnames = list(input_table$gene, classifications)
+  )
 
-for (i in seq_len(nrow(srf))) {
-  for (j in seq_along(classifications)) {
-    class_name = classifications[j]
-    default_val = ifelse(class_name == "do not report", "checked", "")
-    m[i, j] = sprintf(
-      '<input type="radio" name="%s" value="%s" %s/>',
-      srf$gene[i], classval[j], default_val
-    )
+  for (i in seq_len(nrow(input_table))) {
+    for (j in seq_along(classifications)) {
+      class_name = classifications[j]
+      default_val = ifelse(class_name == "do not report", "checked", "")
+      m[i, j] = sprintf(
+        '<input type="radio" name="%s" value="%s" %s/>',
+        input_table$gene[i], classval[j], default_val
+      )
+    }
   }
+  snv = cbind(input_table,m)
+  return(snv)
 }
-snv = cbind(srf,m)
+
+
 
 # Define UI
 ui <- dashboardPage(
@@ -96,15 +100,9 @@ server <- function(input, output, session) {
 
   # Render plot output based on selected sample
   output$sample_plot <- renderPlot({
-    # Get selected sample ID
-    selected_sample <- df$ID
-
-    # Generate sample plot using selected sample ID as x-axis values
-    plot(x = rnorm(10), y = rnorm(10),
-         main = paste("Sample Plot for", selected_sample),
-         xlab = "Sample ID", ylab = "Value")
+    selected_sample = input$sample
+    source("./shinyR/renderPlot_func.R", local = TRUE)
   })
-
   # Render table output based on selected sample
   output$sample_table <- renderTable({
     # Get selected sample ID
